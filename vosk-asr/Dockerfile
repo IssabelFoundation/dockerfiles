@@ -11,7 +11,7 @@ ENV VERSION=$VERSION
 
 RUN mkdir /opt/vosk-model-${LANGUAGE} \
    && cd /opt/vosk-model-${LANGUAGE} \
-   && wget -q $(URL) -O vosk-model.zip \
+   && wget ${URL} -O vosk-model.zip \
    && unzip vosk-model.zip \
    && mv vosk-model-* model \
    && rm -rf vosk-model.zip
