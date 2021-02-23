@@ -2,6 +2,10 @@
 
 Very simple service to parse text (spoken) numbers into actual digits.
 
+Docker Run:
+```
+docker run --name number-parser -d -p8000:8000 issabel/number-parser:latest
+```
 
 Example:
 
